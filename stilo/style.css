@@ -1,0 +1,205 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');/* importando fonte do goole*/
+@font-face{
+    font-family:'andoid'; /*chamada da fonte android*/
+    src: url('../fontes/idroid.otf'); /*inportando a fonte android*/
+    format:('opentype');
+    font-weight: normal;/*importando fonte do android*/
+}
+
+/*variaveis globais*/
+:root{ 
+    --cor0:#444236;
+    --cor1:#40a3d1;
+    --cor2:#E0DEAB;
+    --cor3:#C4BF9F;
+    --cor4:#A39F31;
+    --fonte-padrao:"arial", "verdana", "hervetica";
+    --fonte-destaque:'Bebas Neue', 'cursive';
+    --fonte-android:'andoid', 'cursive';
+
+}
+/*edicao global para todas as tegs*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*toda a formatacao de css ja foi vista em outros exercicios/// background-image: linear-gradient(to right, #00E1FD, #500a2c);*/
+
+
+
+
+
+
+
+body{
+    background-color: #E0D3AB;/*cor geral*/
+    font-family: var(--fonte-padrao)/*chamando a fonte que foi definida em variavel*/
+    
+}
+
+a.externo::after{
+    content: '\00A0\1F517';/* icones de link externo*/
+}
+
+main p{
+    margin: 15px 0px;/*margem*/
+    text-align: justify;/*justificar o texto*/
+    text-indent: 20px;/*recuo da primeira linha de um paragrafo*/
+    line-height: 2em;/*tamanho da letra*/
+}
+
+header{
+   background-image: linear-gradient(to bottom, #bebd6f, #e6dead );/*cor com degrade*/
+    min-height: 150px;/*autura do conteudo do cabecario*/
+    text-align: center;/*centralizar o texto*/
+    padding-top: 40px;/*topo do container*/
+}
+
+header > h1{
+    color:#23221c;
+    font-family :var(--fonte-padrao);/*edicao com a variavel de fontes*/
+    font-size: 3em;/*tamanho da fonte*/
+    margin-bottom: 20px;/*margem baixo*/
+    
+
+
+    
+}
+
+header > p{
+color: #787461;
+font-family: var(--fonte-padrao);/*cor da variavel*/
+font-size: 1.2em;/*tamanho da fonte*/
+max-width: 600px;/*tamanho do corpo de body*/
+padding-right: 10px;/*direita do texto cabecario*/
+padding-left: 10px;/*esqueda texto cabecario*/
+margin: auto;/*para ventralizar*/
+font-weight: bold;/*negrito*/
+}
+
+nav{
+    background-color: var(--cor1);
+    padding: 10px;/*espessura dos links cabecario*/
+    box-shadow: 0px 3px 15px black;/*sombra no cabecario*/
+    text-align: center;/*centralizar os links do cabecario*/
+    
+}
+
+nav > a{
+    color: black;
+    padding: 10px;/*espacamento entre os links*/
+    text-decoration: none;/*retirar o sumblinhado*/
+    font-weight: bold;/*negrito*/
+    border-radius: 500px;/*arrendondamento dos links*/
+    transition-duration: 0.3s;/*efeito de transicao*/
+    
+    
+}
+
+nav > a:hover{/*qunado o mause passar por cima */
+    background-color:#2052699d;
+    color: antiquewhite;
+}
+
+
+main  h1 {
+
+    font-family: var(--fonte-android)
+}
+
+main h2{
+
+    color: var(--cor0);
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, #bcb587, #e2dfca );/*efeito gradeite nos titulos*/
+    
+}
+
+main{
+    background-color: rgb(242, 242, 209);
+    min-width: 320px;/*aqui e a largura minima que o conteudo vai se adaptar */
+    max-width: 1000px;/*largura no main janela do conteudo*/
+    margin: auto;/*centralizar o conteudo*/
+    padding: 20px;/*espacamento lateral para o conteudo nao esbarrar nos cantos*/
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.507);/*degrade*/
+    border-bottom-left-radius: 10px;/*arredondametno baixo*/
+    border-bottom-right-radius: 10px;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+   max-width: 350px;
+    display: block;
+    margin: auto;
+
+}
+
+main strong{
+    color: #23221c;
+    font-weight: bold;
+    background-color: #E0DEAB;
+    padding: 2px 6px;
+}
+
+main a {
+    color: black;
+    font-weight: bold;
+    padding: 2px;
+    text-decoration: none;
+}
+
+main a:hover{
+text-decoration: underline;
+background-color: aqua;
+}
+
+div.video{
+    background-color: #C4BF9F;
+    margin: 0px -20px 30px -20px;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 59%;
+    
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90% ;
+    height: 90%;
+
+}
+aside{
+    background-color: #e0de3d;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.334);
+
+}
+
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3{
+    background-color: #497c32;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+footer{
+    background-color: var(--cor3);
+    text-align: center;
+}
